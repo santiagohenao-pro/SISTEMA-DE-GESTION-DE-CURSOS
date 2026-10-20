@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear estudiante | Sistema de Gestión de Cursos</title>
+    <link rel="stylesheet" href="../Pages/forms-style.css">
+</head>
+<body class="student-form-page">
+    <main class="container-forms">
+        <form class="form-student" id="student-form">
+            <h2 class="title-form">Crear Estudiante</h2>
+            <label for="name">Nombre:</label>
+            <input id="name" type="text" name="name" required placeholder="Nombre completo">
+            <label for="lastname">Apellido:</label>
+            <input id="lastname" type="text" name="last_name" required placeholder="Apellido">
+            <label for="email">Correo:</label>
+            <input id="email" type="text" name="email" inputmode="email" autocomplete="email" autocapitalize="none" required placeholder="nombre@gmail.com">
+            <label for="phone">Telefono:</label>
+            <input id="phone" type="tel" name="phone" required placeholder="300 000 0000">
+            <div class="form-group btns">
+                 <button class="form-button primary-form-button" type="submit">Crear</button>
+                 <a class="form-button secondary-form-button" href="../Estudiantes.html">Cancelar</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

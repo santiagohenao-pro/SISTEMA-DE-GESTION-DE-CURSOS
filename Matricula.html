@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas | Sistema de Gestión de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-app catalog-page enrollments-page">
+    <div class="app-shell">
+        <aside class="dashboard-aside">
+            <header class="dashboard-aside-header">
+                <h1>Sistema de Gestión de Cursos</h1>
+            </header>
+            <nav class="dashboard-aside-nav" aria-label="Navegacion principal">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="Estudiantes.html">Estudiantes</a>
+                <a class="nav-link" href="Cursos.html">Cursos</a>
+                <a class="nav-link active" href="Matricula.html" aria-current="page">Matrículas</a>
+            </nav>
+            <footer class="dashboard-aside-footer">
+                <strong>Administrador</strong>
+                <span>Santiago Henao Hoyos</span>
+                <a href="mailto:santiagohenao@gmail.com">santiagohenao@gmail.com</a>
+            </footer>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-main-header">
+                <h1>Sistema de Gestión de Cursos</h1>
+            </header>
+            <section class="catalog-content">
+                <div class="catalog-heading">
+                    <div><h2>Matrículas</h2><p>Gestión de matrículas registradas</p></div>
+                    <button class="primary-button" type="button">Nueva Matrícula</button>
+                </div>
+                <div class="enrollment-filters">
+                    <label class="visually-hidden" for="enrollment-search">Buscar estudiante o curso</label>
+                    <input class="catalog-search" id="enrollment-search" type="search" placeholder="Buscar estudiante o curso...">
+                    <label class="visually-hidden" for="enrollment-status-filter">Filtrar por estado</label>
+                    <select class="status-filter" id="enrollment-status-filter">
+                        <option>Todos los estados</option>
+                        <option>Activa</option>
+                        <option>Completada</option>
+                        <option>Cancelada</option>
+                    </select>
+                </div>
+                <div class="catalog-table-wrap">
+                    <table class="catalog-table">
+                        <thead>
+                            <tr>
+                                <th><span>E</span>studiante</th>
+                                <th><span>C</span>urso</th>
+                                <th><span>F</span>echa</th>
+                                <th><span>E</span>stado</th>
+                                <th><span>A</span>cciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maria Gomez</td><td>React Desde Cero</td><td>2026-07-30</td><td>ACTIVA</td>
+                                <td class="catalog-actions"><button class="outline-action edit-action" type="button">Editar</button><button class="outline-action delete-action" type="button">Eliminar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Luis Geonaga</td><td>Spring Boot</td><td>2026-07-30</td><td>CANCELADA</td>
+                                <td class="catalog-actions"><button class="outline-action edit-action" type="button">Editar</button><button class="outline-action delete-action" type="button">Eliminar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Maria Gomez</td><td>Spring Boot</td><td>2026-07-30</td><td>COMPLETADA</td>
+                                <td class="catalog-actions"><button class="outline-action edit-action" type="button">Editar</button><button class="outline-action delete-action" type="button">Eliminar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Luis Geonaga</td><td>React Desde Cero</td><td>2026-07-29</td><td>ACTIVA</td>
+                                <td class="catalog-actions"><button class="outline-action edit-action" type="button">Editar</button><button class="outline-action delete-action" type="button">Eliminar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <footer class="home-footer">
+                <span>Derechos reservados</span>
+                <span>Autor: Santiago Henao Hoyos</span>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f7f5fa;
+    color: #191536;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container-forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.form-student {
+    display: flex;
+    flex-direction: column;
+    width: min(440px, 100%);
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid #e8e5ee;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(25, 21, 54, 0.08);
+}
+
+.title-form {
+    margin: 0 0 10px;
+    color: #191536;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-student label {
+    color: #485a78;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.form-student input {
+    width: 100%;
+    min-height: 42px;
+    border: 1px solid #d8e0ec;
+    border-radius: 7px;
+    padding: 9px 11px;
+    background: #fff;
+    color: #172b4d;
+    font: 14px "Segoe UI", Arial, sans-serif;
+}
+
+.form-student input:focus {
+    border-color: #7892ed;
+    outline: 3px solid rgba(83, 120, 237, 0.14);
+}
+
+.form-group.btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    min-height: 40px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 9px 14px;
+    cursor: pointer;
+    font: 650 14px "Segoe UI", Arial, sans-serif;
+    text-decoration: none;
+}
+
+.primary-form-button {
+    background: #3457d5;
+    color: #fff;
+}
+
+.primary-form-button:hover {
+    background: #2744b5;
+}
+
+.secondary-form-button {
+    border-color: #d8e0ec;
+    background: #fff;
+    color: #172b4d;
+}
+
+.secondary-form-button:hover {
+    background: #f7f9fd;
+}
+
+.form-button:focus-visible {
+    outline: 3px solid rgba(83, 120, 237, 0.25);
+    outline-offset: 2px;
+}

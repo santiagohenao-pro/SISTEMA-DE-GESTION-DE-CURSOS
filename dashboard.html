@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Sistema de Gestión de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-app">
+    <div class="app-shell">
+        <aside class="dashboard-aside">
+            <header class="dashboard-aside-header">
+                <h1>Sistema de Gestión de Cursos</h1>
+            </header>
+            <nav class="dashboard-aside-nav" aria-label="Navegación principal">
+                <a class="nav-link active" href="dashboard.html" aria-current="page">Inicio</a>
+                <a class="nav-link" href="Estudiantes.html">Estudiantes</a>
+                <a class="nav-link" href="Cursos.html">Cursos</a>
+                <a class="nav-link" href="Matricula.html">Matrículas</a>
+            </nav>
+            <footer class="dashboard-aside-footer">
+                <strong>Administrador</strong>
+                <span>Santiago Henao Hoyos</span>
+            </footer>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-main-header">
+                <h1>Sistema de Gestión de Cursos</h1>
+            </header>
+
+            <section class="home-content">
+                <div class="home-heading">
+                    <h2>Dashboard</h2>
+                    <p>Sistema general de gestión de matrículas, cursos y estudiantes</p>
+                </div>
+
+                <div class="home-stats">
+                    <article class="home-stat">
+                        <h3>Estudiantes</h3>
+                        <strong>3</strong>
+                        <a href="Estudiantes.html">Ver todos los estudiantes</a>
+                    </article>
+                    <article class="home-stat">
+                        <h3>Cursos</h3>
+                        <strong>2</strong>
+                        <a href="Cursos.html">Ver todos los cursos</a>
+                    </article>
+                    <article class="home-stat">
+                        <h3>Matrículas</h3>
+                        <strong>4</strong>
+                        <a href="Matricula.html">Ver todas las matrículas</a>
+                    </article>
+                </div>
+
+                <div class="home-panels">
+                    <section class="home-panel">
+                        <h3>Matrículas por estado</h3>
+                        <div class="status-list">
+                            <div class="status-row">
+                                <span>Activas</span>
+                                <strong>2 (50%)</strong>
+                                <span class="status-track"><span class="status-fill active-fill" style="width: 50%"></span></span>
+                            </div>
+                            <div class="status-row">
+                                <span>Completadas</span>
+                                <strong>1 (25%)</strong>
+                                <span class="status-track"><span class="status-fill completed-fill" style="width: 25%"></span></span>
+                            </div>
+                            <div class="status-row">
+                                <span>Canceladas</span>
+                                <strong>1 (25%)</strong>
+                                <span class="status-track"><span class="status-fill cancelled-fill" style="width: 25%"></span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="home-panel">
+                        <h3>Cursos populares</h3>
+                        <ul class="popular-courses">
+                            <li><span>Spring Boot</span><strong>2</strong></li>
+                            <li><span>React Desde Cero</span><strong>2</strong></li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <footer class="home-footer">
+                <span>Derechos reservados</span>
+                <span>Autor: Santiago Henao Hoyos</span>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
